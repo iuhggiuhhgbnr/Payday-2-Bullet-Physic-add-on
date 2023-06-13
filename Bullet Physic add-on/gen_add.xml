@@ -1,0 +1,21 @@
+<table directory="assets">
+	<!--Icon-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_iuh_iuhWeaponPrj"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_iuh_iuhWeaponPrjBUCK"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_iuh_iuhWeaponPrjFLAME"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_iuh_iuhWeaponPrjTHERMITE"/>
+
+		<!--Bullet Projectile -->
+		<unit_obj path="units/mods/weapons/wpn_prj_iuhWeaponPrj/wpn_prj_iuhWeaponPrj"/>
+		<unit_obj path="units/mods/weapons/wpn_prj_iuhWeaponPrjFLAME/wpn_prj_iuhWeaponPrjFLAME"/>
+		<unit_obj path="units/mods/weapons/wpn_prj_iuhWeaponPrjTHERMITE/wpn_prj_iuhWeaponPrjTHERMITE"/>
+
+		<!--Effect-->
+		<effect	path="effects/iuhWeaponPrj_glow" load="true"/>
+		<effect	path="effects/iuhWeaponPrjFLAME_spark" load="true"/>
+		<effect	path="effects/iuhWeaponPrjTHERMITE_spark" load="true"/>
+
+		<effect	path="effects/smoke_trail" load="true"/>
+		
+</table>
+

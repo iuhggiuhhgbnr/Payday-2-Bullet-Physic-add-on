@@ -1,0 +1,299 @@
+<mod name="Bullet Physic add-on" color="Color(0,0,0)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="37095" version="0.0.7" provider="modworkshop"/>
+	<GlobalValue id="iuhWeaponPrj" color="Color(255, 215, 0)"/>
+	<AddFiles directory="assets" auto_generate="true">				
+	</AddFiles>
+
+	<!--Main-->	
+	<WeaponMod based_on="wpn_fps_upg_a_custom" id="wpn_fps_iuh_iuhWeaponPrj" has_description = "true" is_a_unlockable="true" hidden="false" global_value = "iuhWeaponPrj" >
+		<perks><value_node value="iuh_ConvertWeaponPrj" /></perks>
+		<stats damage = "20" extra_ammo = "0" total_ammo_mod = "0" concealment = "0" recoil = "0" spread = "2"/>	
+		<weapons>
+
+			<!--Assult rifle-->
+            <value_node value="wpn_fps_ass_74"/>    
+			<value_node value="wpn_fps_ass_akm"/>    
+			<value_node value="wpn_fps_ass_ak5"/>    
+			<value_node value="wpn_fps_ass_flint"/>    
+			<value_node value="wpn_fps_ass_amcar"/>    
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_sub2000"/>
+			<value_node value="wpn_fps_ass_famas"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_scar"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_ching"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_g3"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_ass_g36"/>
+					<!--value_node value="wpn_fps_ass_contraband"/-->
+			<value_node value="wpn_fps_ass_vhs"/>
+			<value_node value="wpn_fps_ass_m14"/>
+			<value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_ass_asval"/>
+			<value_node value="wpn_fps_ass_komodo"/>
+					<!--value_node value="wpn_fps_ass_groza"/-->
+			<value_node value="wpn_fps_ass_shak12"/>
+
+			<!--Light machine gun-->
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_lmg_m60"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_lmg_hk51b"/>
+
+			<!--SMG-->
+			<value_node value="wpn_fps_smg_m45"/>
+			<value_node value="wpn_fps_smg_mp7"/>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_vitvaz"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_smg_m1928"/>
+			<value_node value="wpn_fps_smg_fmg9"/>
+			<value_node value="wpn_fps_smg_pm9"/>
+			<value_node value="wpn_fps_smg_scorpion"/>
+			<value_node value="wpn_fps_smg_mp9"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_smg_baka"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_smg_erma"/>
+			<value_node value="wpn_fps_smg_sr2"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_smg_tec9"/>
+			<value_node value="wpn_fps_smg_p90"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_uzi"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+
+			<!--Sniper rifle-->
+			<value_node value="wpn_fps_snp_tti"/>    
+			<value_node value="wpn_fps_snp_desertfox"/>    
+			<value_node value="wpn_fps_snp_siltstone"/>    
+			<value_node value="wpn_fps_snp_wa2000"/>    
+			<value_node value="wpn_fps_snp_mosin"/>    
+			<value_node value="wpn_fps_snp_model70"/>
+			<value_node value="wpn_fps_snp_r93"/>
+			<value_node value="wpn_fps_snp_msr"/>
+			<value_node value="wpn_fps_snp_winchester"/>
+			<value_node value="wpn_fps_snp_m95"/>
+			<value_node value="wpn_fps_snp_r700"/>
+			<value_node value="wpn_fps_snp_sbl"/>
+			<value_node value="wpn_fps_snp_qbu88"/>
+			<value_node value="wpn_fps_snp_scout"/>
+
+			<!--Special weapon--> 
+			<value_node value="wpn_fps_lmg_m134"/> 
+			<value_node value="wpn_fps_lmg_shuno"/>		
+			<value_node value="wpn_fps_hailstorm"/>		
+
+			<!--Custom Sniper rifle-->	
+			<value_node value="wpn_fps_snp_iuhMSRMK1"/>
+			<value_node value="wpn_fps_snp_iuhQBU50"/>
+
+        </weapons>
+		<override>
+		</override>
+	</WeaponMod>
+
+	<!--Shotgun physic-->	
+	<WeaponMod based_on="wpn_fps_upg_a_custom" id="wpn_fps_iuh_iuhWeaponPrjBUCK" has_description = "true" is_a_unlockable="true" hidden="false" global_value = "iuhWeaponPrj" >
+		<perks><value_node value="iuh_ConvertWeaponPrjBUCK" /></perks>
+		<stats damage = "-10" extra_ammo = "0" total_ammo_mod = "-5" concealment = "0" recoil = "0" spread = "5"/>
+		<weapons>
+
+			<!--Shotgun-->
+			<value_node value="wpn_fps_sho_boot"/>    
+			<value_node value="wpn_fps_shot_saiga"/>    
+			<value_node value="wpn_fps_shot_b682"/>    
+			<value_node value="wpn_fps_sho_ben"/>    
+			<value_node value="wpn_fps_shot_huntsman"/>    
+			<value_node value="wpn_fps_sho_spas12"/>
+			<value_node value="wpn_fps_sho_ksg"/>
+			<value_node value="wpn_fps_shot_r870"/>
+			<value_node value="wpn_fps_sho_aa12"/>
+			<value_node value="wpn_fps_shot_m1897"/>
+			<value_node value="wpn_fps_sho_m590"/>
+			<value_node value="wpn_fps_sho_ultima"/>
+			<value_node value="wpn_fps_sho_basset"/>
+			<value_node value="wpn_fps_sho_serbu"/>
+			<value_node value="wpn_fps_shot_m37"/>
+			<value_node value="wpn_fps_shot_m1897"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_sho_striker"/>
+			<value_node value="wpn_fps_sho_coach"/>
+			<value_node value="wpn_fps_pis_judge"/>
+			<value_node value="wpn_fps_sho_sko12"/>
+			
+        </weapons>
+		<override>
+		</override>
+	</WeaponMod>
+
+	<!--Dragonbreath round-->	
+	<WeaponMod based_on="wpn_fps_upg_a_dragons_breath" id="wpn_fps_iuh_iuhWeaponPrjFLAME" has_description = "true" is_a_unlockable="true" hidden="false" global_value = "iuhWeaponPrj" >
+		<perks><value_node value="iuh_ConvertWeaponPrjFLAME" /></perks>
+		<stats damage = "-5" extra_ammo = "0" total_ammo_mod = "-5" concealment = "0" recoil = "0" spread = "3"/>
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="false" muzzleflash = "effects/particles/character/cigg_trail" bullet_class="FlameBulletBase">
+			<!--fire_dot_data dot_trigger_chance="100" dot_damage="15" dot_length="5" dot_trigger_max_distance="10000" dot_tick_period="0.5" /-->
+		</custom_stats>
+		<weapons>
+
+			<!--Shotgun-->
+			<value_node value="wpn_fps_sho_boot"/>    
+			<value_node value="wpn_fps_shot_saiga"/>    
+			<value_node value="wpn_fps_shot_b682"/>    
+			<value_node value="wpn_fps_sho_ben"/>    
+			<value_node value="wpn_fps_shot_huntsman"/>    
+			<value_node value="wpn_fps_sho_spas12"/>
+			<value_node value="wpn_fps_sho_ksg"/>
+			<value_node value="wpn_fps_shot_r870"/>
+			<value_node value="wpn_fps_sho_aa12"/>
+			<value_node value="wpn_fps_shot_m1897"/>
+			<value_node value="wpn_fps_sho_m590"/>
+			<value_node value="wpn_fps_sho_ultima"/>
+			<value_node value="wpn_fps_sho_basset"/>
+			<value_node value="wpn_fps_sho_serbu"/>
+			<value_node value="wpn_fps_shot_m37"/>
+			<value_node value="wpn_fps_shot_m1897"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_sho_striker"/>
+			<value_node value="wpn_fps_sho_coach"/>
+			<value_node value="wpn_fps_pis_judge"/>
+			<value_node value="wpn_fps_sho_sko12"/>
+			
+        </weapons>
+		<override>
+		</override>
+	</WeaponMod>
+
+	<!--Thermite round-->	
+	<WeaponMod based_on="wpn_fps_upg_a_dragons_breath" id="wpn_fps_iuh_iuhWeaponPrjTHERMITE" has_description = "true" is_a_unlockable="true" hidden="false" global_value = "iuhWeaponPrj" >
+		<perks><value_node value="iuh_ConvertWeaponPrjTHERMITE" /></perks>
+		<stats damage = "0" extra_ammo = "0" total_ammo_mod = "-5" concealment = "0" recoil = "0" spread = "0"/>
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="false" muzzleflash = "effects/particles/character/cigg_trail" bullet_class="FlameBulletBase">
+			<!--fire_dot_data dot_trigger_chance="100" dot_damage="15" dot_length="5" dot_trigger_max_distance="10000" dot_tick_period="0.5" /-->
+		</custom_stats>
+		<weapons>
+
+			<!--Assult rifle-->
+            <value_node value="wpn_fps_ass_74"/>    
+			<value_node value="wpn_fps_ass_akm"/>    
+			<value_node value="wpn_fps_ass_ak5"/>    
+			<value_node value="wpn_fps_ass_flint"/>    
+			<value_node value="wpn_fps_ass_amcar"/>    
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_sub2000"/>
+			<value_node value="wpn_fps_ass_famas"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_scar"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_ching"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_g3"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_ass_vhs"/>
+			<value_node value="wpn_fps_ass_m14"/>
+			<value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_ass_asval"/>
+			<value_node value="wpn_fps_ass_komodo"/>
+			<value_node value="wpn_fps_ass_shak12"/>
+
+			<!--Light machine gun-->
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_lmg_m60"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_lmg_hk51b"/>
+
+			<!--SMG-->
+			<value_node value="wpn_fps_smg_m45"/>
+			<value_node value="wpn_fps_smg_mp7"/>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_vitvaz"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_smg_m1928"/>
+			<value_node value="wpn_fps_smg_fmg9"/>
+			<value_node value="wpn_fps_smg_pm9"/>
+			<value_node value="wpn_fps_smg_scorpion"/>
+			<value_node value="wpn_fps_smg_mp9"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_smg_baka"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_smg_erma"/>
+			<value_node value="wpn_fps_smg_sr2"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_smg_tec9"/>
+			<value_node value="wpn_fps_smg_p90"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_uzi"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+
+			<!--Sniper rifle-->
+			<value_node value="wpn_fps_snp_tti"/>    
+			<value_node value="wpn_fps_snp_desertfox"/>    
+			<value_node value="wpn_fps_snp_siltstone"/>    
+			<value_node value="wpn_fps_snp_wa2000"/>    
+			<value_node value="wpn_fps_snp_mosin"/>    
+			<value_node value="wpn_fps_snp_model70"/>
+			<value_node value="wpn_fps_snp_r93"/>
+			<value_node value="wpn_fps_snp_msr"/>
+			<value_node value="wpn_fps_snp_winchester"/>
+			<value_node value="wpn_fps_snp_m95"/>
+			<value_node value="wpn_fps_snp_r700"/>
+			<value_node value="wpn_fps_snp_sbl"/>
+			<value_node value="wpn_fps_snp_qbu88"/>
+			<value_node value="wpn_fps_snp_scout"/>
+			
+        </weapons>
+		<override>
+		</override>
+	</WeaponMod>
+
+	<Hooks directory="hooks">
+		<hook file	=	"iuhWeaponPrj.lua" 						source_file="lib/units/weapons/projectiles/projectilebase"/>
+		<hook file	=	"iuhWeaponPrjFLAME.lua" 				source_file="lib/units/weapons/projectiles/projectilebase"/>
+		<hook file	=	"iuhWeaponPrjTHERMITE.lua" 				source_file="lib/units/weapons/projectiles/projectilebase"/>
+		
+		<hook file	=	"WeaponBase/iuhWeaponPrjWeaponBase.lua" 			source_file="lib/units/weapons/projectileweaponbase"/>	
+		<hook file	=	"WeaponBase/iuhWeaponPrjFLAMEWeaponBase.lua" 		source_file="lib/units/weapons/projectileweaponbase"/>	
+		<hook file	=	"WeaponBase/iuhWeaponPrjBUCKWeaponBase.lua" 		source_file="lib/units/weapons/projectileweaponbase"/>
+		<hook file	=	"WeaponBase/iuhWeaponPrjTHERMITEWeaponBase.lua" 	source_file="lib/units/weapons/projectileweaponbase"/>	
+		<hook file	=	"WeaponBase/iuhWeaponPrjVOLLEYWeaponBase.lua" 		source_file="lib/units/weapons/projectileweaponbase"/>	
+
+		<hook file	=	"MenuiuhWeaponPrjWeaponBase.lua" 		source_file="lib/units/weapons/menushotgunbase"/>
+
+		<hook file 	=	"newraycastweaponbase.lua"	 			source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file 	=	"newraycastweaponbase2.lua"	 			source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file 	=	"shotgunbase2.lua"	 					source_file="lib/units/weapons/shotgun/shotgunbase"/>
+		<hook file 	=	"shotgunbase.lua"	 					source_file="lib/units/weapons/shotgun/shotgunbase"/>
+
+		<!--hook file =	"BulletSpawnFireBulletBase.lua"		source_file="lib/units/weapons/newraycastweaponbase"/-->
+
+
+	</Hooks>
+</mod>

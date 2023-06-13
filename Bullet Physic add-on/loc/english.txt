@@ -1,0 +1,15 @@
+{
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrj" : "Bullet Physic",
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrj_desc" : "Convert Raycast Weapon Into Projectile Weapon",
+
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjBUCK" : "Buckshot Physic",
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjBUCK_desc" : "Convert Raycast Weapon Into Projectile Weapon \n- 8 Pelletes \n- Reduce Total Ammo",
+
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjFLAME" : "Dragonbreath Physic",
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjFLAME_desc" : "Convert Raycast Weapon Into Projectile Weapon \n- 8 Pelletes \n- Reduce Total Ammo \n- Set Target On Fire",
+
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjTHERMITE" : "Thermite Physic",
+	"bm_wp_wpn_fps_iuh_iuhWeaponPrjTHERMITE_desc" : "Convert Raycast Weapon Into Projectile Weapon \n- Reduce Total Ammo \n- Set Target On Fire",
+
+	"menu_l_global_value_iuhWeaponPrj" : "This is an iuhggiuhhgbnr's mod!"
+}
